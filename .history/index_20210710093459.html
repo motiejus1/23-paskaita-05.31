@@ -1,0 +1,92 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       .skaiciotuvo-rezultatas{
+           width: 40%;
+       }
+       input{
+           margin:10px;
+           text-align: center;
+       }
+   </style>
+</head>
+<body>
+    <div id="rezultatas"></div>
+    <div>
+        <input type="text" name="x" id="x" placeholder="x">
+        <input type="text" name="y" id="y" placeholder="y">
+        <input type="text" name="z" id="z" placeholder="z">
+        <button id="sum">sum x and y</button>
+        <button id="subtract">subtract x and y</button>
+        <button id="multiplay">multiplay x and y</button>
+        <button id="division">division x and y</button>
+        <button id="palyginimas">palyginimas x ir y</button>
+        <button id="palyginimas3">palyginimas x,y ir z</button>
+        <button id="trikampis">patikrinti ar toks trikapims egzistoja pagal 3 krastines(x,y,z)</button>
+    </div>
+    <div>
+        <input type="text" class="skaiciotuvo-rezultatas" name="skaiciotuvo-rezultatas" disabled="true">
+    </div>
+    <div>
+            <input type="text" name="masyvas" id="masyvas">
+            <button class="masyvo-mygtukas">prideti</button>
+            <input type="text" disabled="true" id="masyvo-rezultatas" name="masyvo-rezultatas">
+    </div>
+    <div class="trupmena">
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2">
+                        <input type="text" name="sveikasisa" id="sveikasisa">
+                    </td>
+                    <td>
+                        <input type="text" name="skaitiklisa"  id="skaitiklisa">
+                    </td>
+                    <td rowspan="2">+</td>
+                    <td rowspan="2">
+                        <input type="text" name="sveikasisb" id="sveikasisb">
+                    </td>
+                    <td>
+                        <input type="text" name="skaitiklisb"  id="skaitiklisb">
+                    </td>
+                    <td rowspan="2">=</td>
+                    <td>
+                        <input type="text" name="netaisyklingoji-trupmenos-skaitiklis" id="netaisyklingoji-trupmenos-skaitiklis" >
+                    </td>
+                    <td rowspan="2">=</td>
+                    <td rowspan="2">
+                        <input type="text" name="taisyklingoji-trupmenos-sveikasis" id="taisyklingoji-trupmenos-sveikasis">
+                    </td>
+                    <td>
+                        <input type="text"  name="taisyklingoji-trupmenos-skaitiklis" id="taisyklingoji-trupmenos-skaitiklis">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="vardiklisa"  id="vardiklisa">
+                    </td>
+                    <td>
+                        <input type="text" name="vardiklisb"  id="vardiklisb">
+                    </td>
+                    <td>
+                        <input type="text" name="netaisyklingoji-trupmenos-vardiklis" id="netaisyklingoji-trupmenos-vardiklis">
+                    </td>
+                    <td>
+                        <input type="text" name="taisyklingoji-trupmenos-vardiklis" id="taisyklingoji-trupmenos-vardiklis">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <button id="trupmenos-suma">Suma</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

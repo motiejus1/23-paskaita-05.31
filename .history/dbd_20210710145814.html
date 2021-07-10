@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23 paskaita</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function supaprastink(trupmena) {
+            
+            var dbd = 0;
+            var a = trupmena[1];
+            var b = trupmena[2];
+            while (a > 0 && b > 0) {
+                if(a > trupmena[2] ) {
+                    trupmena[1] = trupmena[1] % trupmena[2];  
+                } else {
+                    trupmena[2] = trupmena[2] % trupmena[1];
+                }
+            }
+            
+            return trupmena;   
+        }
+
+
+        var trupmena = [0, 9, 18];
+        
+        var strupmena = supaprastink(trupmena);
+
+        console.log(strupmena);
+
+
+
+    </script>
+    
+</body>
+</html>
